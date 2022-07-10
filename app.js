@@ -55,16 +55,27 @@ socket.on('enviado-send-msj', (data) => {
 
 // crea session
 venom
+  // .create(
+  //   'PapayaExpresMsj',
+  //   undefined,
+  //   (statusSession, session) => {
+  //     console.log('Status Session: ', statusSession);
+  //     //return isLogged || notLogged || browserClose || qrReadSuccess || qrReadFail || autocloseCalled || desconnectedMobile || deleteToken || chatsAvailable || deviceNotConnected || serverWssNotConnected || noOpenBrowser
+  //     //Create session wss return "serverClose" case server for close
+  //     console.log('Session name: ', session);
+  //   },
+  //   undefined
+  // )
   .create(
-    'PapayaExpresMsj',
-    undefined,
-    (statusSession, session) => {
-      console.log('Status Session: ', statusSession);
-      //return isLogged || notLogged || browserClose || qrReadSuccess || qrReadFail || autocloseCalled || desconnectedMobile || deleteToken || chatsAvailable || deviceNotConnected || serverWssNotConnected || noOpenBrowser
-      //Create session wss return "serverClose" case server for close
-      console.log('Session name: ', session);
+    //session
+    'PapayaExpresMsj', //Pass the name of the client you want to start the bot
+    //catchQR
+    (base64Qrimg, asciiQR, attempts, urlCode) => {
+      console.log('Number of attempts to read the qrcode: ', attempts);
+      console.log('Terminal qrcode: ', asciiQR);
+      console.log('base64 image string qrcode: ', base64Qrimg);
+      console.log('urlCode (data-ref): ', urlCode);
     },
-    undefined,
     // statusFind
     (statusSession, session) => {
       console.log('Status Session: ', statusSession); //return isLogged || notLogged || browserClose || qrReadSuccess || qrReadFail || autocloseCalled || desconnectedMobile || deleteToken || chatsAvailable || deviceNotConnected || serverWssNotConnected || noOpenBrowser || initBrowser || openBrowser || connectBrowserWs || initWhatsapp || erroPageWhatsapp || successPageWhatsapp || waitForLogin || waitChat || successChat
