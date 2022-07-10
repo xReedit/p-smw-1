@@ -1,0 +1,12 @@
+2021/06/07-12:29:31.415 57e0 Reusing MANIFEST C:\laragon\www\send-msj-whatsapp\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/06/07-12:29:31.415 57e0 Recovering log #4
+2021/06/07-12:29:31.488 57e0 Reusing old log C:\laragon\www\send-msj-whatsapp\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000004.log 
+2021/06/07-12:29:51.736 5590 Level-0 table #8: started
+2021/06/07-12:29:52.172 5590 Level-0 table #8: 878853 bytes OK
+2021/06/07-12:29:52.377 5590 Delete type=0 #4
+2021/06/07-12:29:52.500 65b0 Compacting 1@1 + 1@2 files
+2021/06/07-12:29:52.775 65b0 Generated table #9@1: 650 keys, 29977 bytes
+2021/06/07-12:29:52.775 65b0 Compacted 1@1 + 1@2 files => 29977 bytes
+2021/06/07-12:29:52.915 65b0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/06/07-12:29:52.968 65b0 Delete type=2 #5
+2021/06/07-12:29:52.968 65b0 Delete type=2 #8
